@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>출장예약</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/content.css">
+</head>
+<body>
+	<div class="wrapper_filter">
+		<div class="top">
+			<div>
+				<a href="#none"><img src="../img/top/2.png" alt=""></a>
+			</div>
+			<div>
+				<h4>상세필터</h4>
+			</div>
+			<div></div>
+		</div>
+		<div class="tab_1">
+			<div data-child="false" class="tab_header filter_tab_header">
+				<a href="#none" class="tab__header-1 active">
+					<span></span>
+					결제금액
+				</a>
+				<a href="#none" class="tab__header-2">
+					<span></span>
+					기타필터
+				</a>
+			</div>
+			<div class="tab_content">
+				<div class="tab__content-1 payment active">
+					<div class="double_range">
+						<div class="range_slider">
+							<input type="range" class="rTL" min="0" step="0" max="999999" value="0">
+							<input type="range" class="rTR" min="0" step="0" max="999999" value="999999">
+							<div class="slider">
+								<div class="track"></div>
+								<div class="range_top"></div>
+							</div>
+						</div>
+						<div class="range_number">
+							<h5 class="nFT"></h5>
+							<h5 class="nTT"></h5>
+						</div>
+					</div>
+					<div class="double_range">
+						<div class="range_slider">
+							<input type="range" class="rBL" min="0" step="0" max="999999" value="0">
+							<input type="range" class="rBR" min="0" step="0" max="999999" value="200000">
+							<div class="slider">
+								<div class="track"></div>
+								<div class="range_bottom"></div>
+							</div>
+						</div>
+						<div class="range_number">
+							<h5 class="nFB"></h5>
+							<h5 class="nTB"></h5>
+						</div>
+					</div>
+				</div>
+				<div class="tab__content-2 filter">
+					<div class="tab">
+						<div data-child="true" class="tab_header other_tab_header">
+							<a href="#none" class="tab__header-1 active">지불방법</a>
+							<a href="#none" class="tab__header-2">서비스</a>
+							<a href="#none" class="tab__header-3">부대시설</a>
+						</div>
+						<div class="tab_content">
+							<div class="tab__content-1 active">
+								<div class="card">
+									<ul>
+										<li>
+											<p>선지불 결제</p>
+											<label class="form_check">
+												<input type="checkbox" checked="checked">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<p>현장에서 결제</p>
+											<label class="form_check">
+												<input type="checkbox">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="card">
+									<ul>
+										<li>
+											<p>인터넷/와이파이</p>
+											<label class="form_check">
+												<input type="checkbox" checked="checked">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<p>비즈니스센터</p>
+											<label class="form_check">
+												<input type="checkbox">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="tab__content-2">
+								<div class="card">
+									<ul>
+										<li>
+											<p>선지불 결제</p>
+											<label class="form_check">
+												<input type="checkbox">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<p>현장에서 결제</p>
+											<label class="form_check">
+												<input type="checkbox" checked="checked">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="tab__content-3">
+								<div class="card">
+									<ul>
+										<li>
+											<p>인터넷/와이파이</p>
+											<label class="form_check">
+												<input type="checkbox" checked="checked">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<p>비즈니스센터</p>
+											<label class="form_check">
+												<input type="checkbox">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="button_fix_bottom">
+			<a href="#none">확인</a>
+		</div>
+	</div>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.tab_1').tab();
+		});
+	</script>
+</body>
+</html>
